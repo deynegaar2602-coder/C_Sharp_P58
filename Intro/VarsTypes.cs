@@ -49,6 +49,39 @@ namespace C_Sharp_P58.Intro        // namespace може вкладатись (�
             // Тим не менш, обидві групи типів походять від єдиного нащадка Object,
             // що призводить до того, що вони мають певний перелік спільних методів
             // зокрема, ToString(), який відповідає за рядкове подання об'єкту.
+
+            double d = Convert.ToDouble(x);
+            string str = "Привіт ";
+            byte b = 10;
+            short s = 100;
+            long lng;
+            char c = 'a';
+
+            Console.Write("Ім'я: ");
+            String Line = Console.ReadLine()!;
+            Console.WriteLine(str + Line);
+
+            Console.Write("Вік: ");
+            Line = Console.ReadLine()!;
+            b = Convert.ToByte(Line);
+            Console.WriteLine("Ваш вік " + b);
+            if (b <= 10)
+            {
+                Console.WriteLine("Child");
+            }
+            else if (b > 10 && b <= 19)
+            {
+                Console.WriteLine("Tennager");
+            }
+            else if (b > 10 && b <= 60)
+            {
+                Console.WriteLine("Adult");
+            }
+            else
+            {
+                Console.WriteLine("Old");
+            }
+
         }
     }
 }
